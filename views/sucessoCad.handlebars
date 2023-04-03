@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cadastros</title>
+    <style>
+      body {
+        background-color: #F8F8F8;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        font-size: 36px;
+        color: #333;
+        margin: 20px 0;
+      }
+      p {
+        font-size: 18px;
+        color: #666;
+        margin: 0;
+      }
+      .conteudo {
+        border: 2px solid #333;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cadastros</h1>
+    {{#each conteudos}}
+      <div class="conteudo">
+        <h2>{{nome}}</h2>
+        <p>Email: {{email}}</p> 
+        <p>Telefone: {{telefone}}</p> 
+        <p>Empresa: {{empresa}}</p>
+        <a href="/e/cadastros/edit/{{{email}}}"><button class="btn btn-success">Editar Cadastro</button></a>
+      </div>
+    {{/each}}
+  </body>
+</html>

@@ -3,7 +3,9 @@ Esse projeto tem como objetivo permitir o cadastro de usuários em um sistema ut
 
 Pré-requisitos
 Node.js instalado na máquina
+
 Como rodar o projeto
+
 Clone o repositório em sua máquina
 Abra o terminal e navegue até o diretório do projeto
 Execute o comando npm install para instalar as dependências
